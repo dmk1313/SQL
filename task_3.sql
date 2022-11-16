@@ -38,4 +38,4 @@ where player.guild_id is not null;
 
 /*10. ¬ывести в алфавитном пор€дке названи€ всех уникальных достижений, которые были у игроков*/
 SELECT DISTINCT achievement.name from achievement join player on achievement.player_id = player.id
-order by achievement.name ASC 
+order by achievement.name ASC;
