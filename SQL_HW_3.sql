@@ -172,7 +172,7 @@ select employees.employee_name, roles.role_name, salary.monthly_salary from empl
 join employee_salary on employees.id = employee_salary.employee_id join salary on salary.id = employee_salary.id
 join roles_employee on roles_employee.employee_id = employees.id join roles on  roles.id = roles_employee.role_id
 where salary.monthly_salary < '2300'
-order by salary.monthly_salary;
+order by salary.monthly_salary ASC;
 
 /* 32. Вывести имена, должности и ЗП всех специалистов по возрастанию у специалистов у которых ЗП равна 1100, 1500, 2000*/
 select employees.employee_name, roles.role_name, salary.monthly_salary from employees
